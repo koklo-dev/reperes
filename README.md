@@ -29,3 +29,5 @@ Après un changement de schéma : `pnpm db:types` régénère `packages/db/src/t
 Standard `josias-koffi/infra` : `.deploy/manifest.yaml` (validé par `infra/scripts/validate-manifest.py`) et `.github/workflows/deploy.yml`.
 Staging : push sur `develop` → `reperes-staging.koklo.dev`. Production : _Run workflow_ depuis `main` → `reperes.koklo.dev`.
 Onboarding unique, depuis infra : `scripts/onboard-app.sh josias-koffi/reperes ../Repere-France`.
+
+Staging : déployé automatiquement à chaque push sur `develop`.
