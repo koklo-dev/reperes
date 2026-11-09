@@ -1,0 +1,28 @@
+# yaml-language-server: $schema=https://raw.githubusercontent.com/josias-koffi/infra/main/schema/manifest.v1.json
+# REPÈRES — un projet Dokploy `reperes`, environnements production et staging.
+# Airflow (pipelines/) reste local pour l'instant : son déploiement est décidé au Sprint 1.
+apiVersion: deploy/v1
+name: reperes
+description: Séries officielles superposées à la chronologie du pouvoir
+server: vps20
+
+apps:
+  web:
+    image: ghcr.io/josias-koffi/reperes-web
+    port: 3000
+    domain: web
+    healthcheck: /api/health
+    uses: [db]
+    resources: { cpus: 0.5, memory: 512m }
+
+databases:
+  db: { type: postgres, version: 16-alpine, database: reperes, user: reperes } # DB_PASSWORD généré par infra
+
+environments:
+  production:
+    branch: main
+    deploy: manual # un push sur main ne déploie jamais : Run workflow depuis main
+    domains: { web: reperes.koklo.dev }
+  staging:
+    branch: develop # deploy: auto (défaut)
+    domains: { web: reperes-staging.koklo.dev }

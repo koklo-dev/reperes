@@ -1,0 +1,9 @@
+[project]
+name = "reperes-pipelines"
+version = "0.1.0"
+description = "Ingestion des séries officielles (Airflow) vers Postgres"
+requires-python = ">=3.11"
+dependencies = []
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]

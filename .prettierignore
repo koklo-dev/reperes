@@ -1,0 +1,8 @@
+html
+mockups
+scripts
+BRIEF.md
+DESIGN.md
+pnpm-lock.yaml
+*.generated.ts
+.next

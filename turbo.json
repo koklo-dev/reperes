@@ -1,0 +1,15 @@
+{
+  "$schema": "https://turbo.build/schema.json",
+  "globalEnv": ["NODE_ENV", "APP_ENV"],
+  "tasks": {
+    "build": {
+      "dependsOn": ["^build"],
+      "outputs": [".next/**", "!.next/cache/**", "!.next/dev/**"],
+      "env": ["DATABASE_URL", "NEXT_PUBLIC_*"]
+    },
+    "dev": { "cache": false, "persistent": true },
+    "lint": {},
+    "typecheck": {},
+    "test": { "outputs": ["coverage/**"] }
+  }
+}

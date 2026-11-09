@@ -1,0 +1,26 @@
+{
+  "name": "reperes",
+  "private": true,
+  "type": "module",
+  "packageManager": "pnpm@11.22.0",
+  "scripts": {
+    "dev": "turbo run dev --parallel",
+    "build": "turbo run build",
+    "lint": "turbo run lint",
+    "typecheck": "turbo run typecheck",
+    "test": "turbo run test",
+    "db:up": "docker compose up -d --wait db",
+    "db:migrate": "pnpm --filter @reperes/db migrate",
+    "db:seed": "pnpm --filter @reperes/db seed",
+    "db:types": "pnpm --filter @reperes/db types",
+    "format": "prettier --write ."
+  },
+  "devDependencies": {
+    "prettier": "^3.4.2",
+    "turbo": "^2.11.7",
+    "typescript": "5.7.3"
+  },
+  "engines": {
+    "node": ">=22"
+  }
+}

@@ -1,0 +1,209 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<title>Méthode – Repères</title>
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;700&family=Space+Grotesk:wght@500;700&display=swap" rel="stylesheet">
+<style>
+body{margin:0;background:#0B1530}
+a{color:#A9B4D6;text-decoration:none}a:hover{color:#F4F1EA}
+</style>
+</helmet>
+<div style="min-height: 2700px; box-sizing: border-box; background-color: #0B1530; background-image: radial-gradient(#1E2F5C 1px, transparent 1px); background-size: 24px 24px; color: #F4F1EA; font-family: 'JetBrains Mono', monospace; font-size: 14px; line-height: 1.6">
+
+<div style="background: #060D22; border-bottom: 1px solid #1E2F5C">
+<div style="max-width: 1280px; margin: 0 auto; padding: 8px 32px; display: flex; flex-wrap: wrap; gap: 8px 24px; justify-content: space-between; font-size: 11px; letter-spacing: 0.08em; text-transform: uppercase; color: #A9B4D6">
+<span>// MAQUETTE v0 · statuts des sources à mettre à jour</span>
+<span>REV 0.1 · FR</span>
+</div>
+</div>
+
+<header style="border-bottom: 1px solid #1E2F5C; background: #0B1530">
+<div style="max-width: 1280px; margin: 0 auto; padding: 12px 32px; display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 8px 24px">
+<a href="Main.dc.html" style="display: inline-flex; align-items: center; gap: 12px; min-height: 44px; color: #F4F1EA">
+<svg width="28" height="28" viewBox="0 0 28 28" aria-hidden="true"><rect x="3.5" y="3.5" width="21" height="21" fill="none" stroke="#F4F1EA" stroke-width="1.5"/><path d="M14 0V8M14 20V28M0 14H8M20 14H28" stroke="#E8493F" stroke-width="1.5"/></svg>
+<span style="font-family: 'Space Grotesk', sans-serif; font-weight: 700; font-size: 20px; letter-spacing: 0.14em">REPÈRES</span>
+</a>
+<nav aria-label="Navigation principale" style="display: flex; flex-wrap: wrap; gap: 0 8px; font-size: 12px; letter-spacing: 0.08em; text-transform: uppercase">
+<a href="Main.dc.html" style="display: inline-flex; align-items: center; min-height: 44px; padding: 0 10px">Synthèse</a>
+<a href="Chomage.dc.html" style="display: inline-flex; align-items: center; min-height: 44px; padding: 0 10px">Chômage</a>
+<a href="Main.dc.html" style="display: inline-flex; align-items: center; min-height: 44px; padding: 0 10px">Secteurs</a>
+<a href="Immigration.dc.html" style="display: inline-flex; align-items: center; min-height: 44px; padding: 0 10px">Immigration</a>
+<a href="Methode.dc.html" aria-current="page" style="display: inline-flex; align-items: center; min-height: 44px; padding: 0 10px; color: #F4F1EA; box-shadow: inset 0 -2px 0 {{accent}}">Méthode</a>
+</nav>
+</div>
+</header>
+
+<section style="max-width: 1280px; margin: 0 auto; padding: 48px 32px 32px">
+<div style="font-size: 12px; letter-spacing: 0.08em; text-transform: uppercase; color: #A9B4D6"><a href="Main.dc.html">Accueil</a> / <span style="color: #F4F1EA">Méthode</span></div>
+<div style="margin-top: 20px; font-size: 12px; letter-spacing: 0.12em; text-transform: uppercase; color: {{accent}}">// Transparence</div>
+<h1 style="margin: 8px 0 0; font-family: 'Space Grotesk', sans-serif; font-weight: 700; font-size: clamp(36px, 5vw, 60px); line-height: 1.04; letter-spacing: -0.02em">Méthode et sources</h1>
+<p style="margin: 16px 0 0; max-width: 700px; color: #A9B4D6; font-size: 15px">Comment les données sont collectées, comment le « pouvoir en place » est défini, et ce que le site s'interdit de faire. Tout est vérifiable.</p>
+</section>
+
+<!-- Principes -->
+<section style="max-width: 1280px; margin: 0 auto; padding: 0 32px 48px">
+<div style="display: flex; align-items: center; gap: 16px; margin-bottom: 24px; font-size: 12px; letter-spacing: 0.12em; text-transform: uppercase; color: #A9B4D6">
+<span>// 01 — Principes</span>
+<span style="flex: 1; height: 1px; background: #1E2F5C"></span>
+</div>
+<div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 1px; background: #3A4F8A; border: 1px solid #3A4F8A">
+<sc-for list="{{rules}}" as="r" hint-placeholder-count="4">
+<div style="background: #0B1530; padding: 24px">
+<div style="font-size: 11px; letter-spacing: 0.1em; color: {{accent}}">{{r.n}}</div>
+<div style="margin-top: 8px; font-family: 'Space Grotesk', sans-serif; font-weight: 700; font-size: 20px">{{r.title}}</div>
+<div style="margin-top: 6px; font-size: 13px; color: #A9B4D6">{{r.desc}}</div>
+</div>
+</sc-for>
+</div>
+</section>
+
+<!-- Pipeline -->
+<section style="max-width: 1280px; margin: 0 auto; padding: 0 32px 48px">
+<div style="display: flex; align-items: center; gap: 16px; margin-bottom: 24px; font-size: 12px; letter-spacing: 0.12em; text-transform: uppercase; color: #A9B4D6">
+<span>// 02 — Chaîne de traitement</span>
+<span style="flex: 1; height: 1px; background: #1E2F5C"></span>
+</div>
+<div style="display: flex; flex-wrap: wrap; align-items: stretch; gap: 16px">
+<sc-for list="{{pipeline}}" as="p" hint-placeholder-count="4">
+<div style="flex: 1 1 240px; display: flex; align-items: stretch; gap: 16px">
+<div style="flex: 1; position: relative; border-top: 1px solid #3A4F8A; border-bottom: 1px solid #3A4F8A; padding: 20px; background: rgba(11, 21, 48, 0.9)">
+<div style="position: absolute; top: -1px; left: -1px; width: 12px; height: 12px; border-top: 2px solid #F4F1EA; border-left: 2px solid #F4F1EA"></div>
+<div style="position: absolute; top: -1px; right: -1px; width: 12px; height: 12px; border-top: 2px solid #F4F1EA; border-right: 2px solid #F4F1EA"></div>
+<div style="position: absolute; bottom: -1px; left: -1px; width: 12px; height: 12px; border-bottom: 2px solid #F4F1EA; border-left: 2px solid #F4F1EA"></div>
+<div style="position: absolute; bottom: -1px; right: -1px; width: 12px; height: 12px; border-bottom: 2px solid #F4F1EA; border-right: 2px solid #F4F1EA"></div>
+<div style="font-size: 11px; letter-spacing: 0.1em; color: #A9B4D6">{{p.n}}</div>
+<div style="margin-top: 6px; font-family: 'Space Grotesk', sans-serif; font-weight: 700; font-size: 20px">{{p.title}}</div>
+<div style="margin-top: 6px; font-size: 12px; color: #A9B4D6">{{p.desc}}</div>
+</div>
+<div style="align-self: center; color: {{accent}}; font-size: 18px" aria-hidden="true">→</div>
+</div>
+</sc-for>
+</div>
+</section>
+
+<!-- Modèle de données -->
+<section style="max-width: 1280px; margin: 0 auto; padding: 0 32px 48px">
+<div style="display: flex; align-items: center; gap: 16px; margin-bottom: 24px; font-size: 12px; letter-spacing: 0.12em; text-transform: uppercase; color: #A9B4D6">
+<span>// 03 — Modèle de données (Postgres)</span>
+<span style="flex: 1; height: 1px; background: #1E2F5C"></span>
+<span>« pouvoir en place » = table regime, trois lectures possibles</span>
+</div>
+<div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 24px">
+<sc-for list="{{tables}}" as="t" hint-placeholder-count="5">
+<div style="position: relative; border-top: 1px solid #3A4F8A; border-bottom: 1px solid #3A4F8A; padding: 20px; background: rgba(11, 21, 48, 0.9)">
+<div style="position: absolute; top: -1px; left: -1px; width: 12px; height: 12px; border-top: 2px solid #F4F1EA; border-left: 2px solid #F4F1EA"></div>
+<div style="position: absolute; top: -1px; right: -1px; width: 12px; height: 12px; border-top: 2px solid #F4F1EA; border-right: 2px solid #F4F1EA"></div>
+<div style="position: absolute; bottom: -1px; left: -1px; width: 12px; height: 12px; border-bottom: 2px solid #F4F1EA; border-left: 2px solid #F4F1EA"></div>
+<div style="position: absolute; bottom: -1px; right: -1px; width: 12px; height: 12px; border-bottom: 2px solid #F4F1EA; border-right: 2px solid #F4F1EA"></div>
+<div style="font-size: 11px; letter-spacing: 0.1em; text-transform: uppercase; color: {{accent}}">table</div>
+<div style="margin-top: 4px; font-weight: 700; font-size: 18px">{{t.name}}</div>
+<div style="margin-top: 4px; font-size: 12px; color: #A9B4D6">{{t.desc}}</div>
+<div style="margin-top: 12px; padding-top: 12px; border-top: 1px dashed #3A4F8A; font-size: 12px; color: #F4F1EA; line-height: 1.9">{{t.fields}}</div>
+</div>
+</sc-for>
+</div>
+</section>
+
+<!-- Catalogue -->
+<section style="max-width: 1280px; margin: 0 auto; padding: 0 32px 48px">
+<div style="display: flex; align-items: center; gap: 16px; margin-bottom: 24px; font-size: 12px; letter-spacing: 0.12em; text-transform: uppercase; color: #A9B4D6">
+<span>// 04 — Catalogue des indicateurs</span>
+<span style="flex: 1; height: 1px; background: #1E2F5C"></span>
+<span>pas encore branché</span>
+</div>
+<div style="overflow-x: auto; border: 1px solid #3A4F8A">
+<div style="min-width: 720px; display: grid; grid-template-columns: 2fr 1.8fr 1.1fr 1.4fr; gap: 1px; background: #3A4F8A; font-size: 12px">
+<div style="background: #060D22; padding: 10px 12px; font-size: 11px; letter-spacing: 0.08em; text-transform: uppercase; color: #A9B4D6">Indicateur</div>
+<div style="background: #060D22; padding: 10px 12px; font-size: 11px; letter-spacing: 0.08em; text-transform: uppercase; color: #A9B4D6">Source</div>
+<div style="background: #060D22; padding: 10px 12px; font-size: 11px; letter-spacing: 0.08em; text-transform: uppercase; color: #A9B4D6">Fréquence</div>
+<div style="background: #060D22; padding: 10px 12px; font-size: 11px; letter-spacing: 0.08em; text-transform: uppercase; color: #A9B4D6">Statut</div>
+<sc-for list="{{catalog}}" as="c" hint-placeholder-count="9">
+<div style="background: #0B1530; padding: 12px; color: #F4F1EA">{{c.name}}</div>
+<div style="background: #0B1530; padding: 12px; color: #A9B4D6">{{c.source}}</div>
+<div style="background: #0B1530; padding: 12px; color: #A9B4D6">{{c.freq}}</div>
+<div style="background: #0B1530; padding: 12px; color: #A9B4D6">{{c.status}}</div>
+</sc-for>
+</div>
+</div>
+</section>
+
+<!-- Glossaire -->
+<section style="max-width: 1280px; margin: 0 auto; padding: 0 32px 56px">
+<div style="display: flex; align-items: center; gap: 16px; margin-bottom: 24px; font-size: 12px; letter-spacing: 0.12em; text-transform: uppercase; color: #A9B4D6">
+<span>// 05 — Glossaire</span>
+<span style="flex: 1; height: 1px; background: #1E2F5C"></span>
+</div>
+<div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 1px; background: #3A4F8A; border: 1px solid #3A4F8A">
+<sc-for list="{{glossary}}" as="g" hint-placeholder-count="4">
+<div style="background: #0B1530; padding: 20px 24px">
+<div style="font-family: 'Space Grotesk', sans-serif; font-weight: 700; font-size: 18px">{{g.term}}</div>
+<div style="margin-top: 6px; font-size: 13px; color: #A9B4D6">{{g.def}}</div>
+</div>
+</sc-for>
+</div>
+</section>
+
+<footer style="border-top: 1px solid #1E2F5C; background: #060D22">
+<div style="max-width: 1280px; margin: 0 auto; padding: 32px; display: flex; flex-wrap: wrap; justify-content: space-between; gap: 16px 32px; font-size: 11px; letter-spacing: 0.06em; text-transform: uppercase; color: #A9B4D6">
+<span>Code et données ouverts · licence à définir</span>
+<span>Maquette v0</span>
+</div>
+</footer>
+
+</div>
+</x-dc>
+<script type="text/x-dc" data-dc-script data-props='{"accent":{"editor":"color","default":"#E8493F","options":["#E8493F","#FF6A5C","#D93A31"]},"$preview":{"width":1360,"height":2700}}'>
+class Component extends DCLogic {
+  renderVals() {
+    const accent = this.props.accent ?? '#E8493F';
+    return {
+      accent,
+      rules: [
+        { n: '01', title: 'Données brutes d’abord', desc: 'Séries officielles, avec lien direct vers la source et la définition.' },
+        { n: '02', title: 'Décalage paramétrable', desc: 'De 0 à 5 ans entre une décision et ses effets, au choix du lecteur.' },
+        { n: '03', title: 'Comparaison', desc: 'Zone euro ou Allemagne, pour isoler ce qui est propre à la France.' },
+        { n: '04', title: 'Aucun score', desc: 'Pas de note « meilleur / pire », pas de couleur associée à un camp.' }
+      ],
+      pipeline: [
+        { n: '01', title: 'Sources', desc: 'Insee, Eurostat, Dares, SDES, SSMSI, Légifrance, Assemblée nationale.' },
+        { n: '02', title: 'Ingestion', desc: 'DAGs Python orchestrés par Apache Airflow : extraction, normalisation, contrôles.' },
+        { n: '03', title: 'Base', desc: 'PostgreSQL : observations, régimes, décisions, sources.' },
+        { n: '04', title: 'Site', desc: 'Next.js, composants serveur qui interrogent directement la base.' }
+      ],
+      tables: [
+        { name: 'regime', desc: 'Frise du pouvoir : présidents, gouvernements, majorités.', fields: 'id · kind · label · start_date · end_date · cohabitation' },
+        { name: 'indicator', desc: 'Une série par ligne, avec sa définition officielle.', fields: 'id · slug · label · unit · sector · frequency · definition_url' },
+        { name: 'observation', desc: 'Les valeurs, période par période.', fields: 'indicator_id · period · geo · value · series_break · revision' },
+        { name: 'decision', desc: 'Lois et ordonnances rattachées à un secteur.', fields: 'id · date · title · kind · sector · legifrance_ref' },
+        { name: 'source', desc: 'Origine, licence et date de récupération.', fields: 'id · name · url · licence · fetched_at' }
+      ],
+      catalog: [
+        { name: 'Taux de chômage (BIT)', source: 'Insee, BDM', freq: 'Trimestrielle', status: 'À brancher' },
+        { name: 'Chômage, zone euro', source: 'Eurostat', freq: 'Mensuelle', status: 'À brancher' },
+        { name: 'Logements autorisés', source: 'SDES, Sit@del2', freq: 'Mensuelle', status: 'À brancher' },
+        { name: 'Revenu disponible par unité de consommation', source: 'Insee, comptes nationaux', freq: 'Annuelle', status: 'À brancher' },
+        { name: 'Dette publique, % du PIB', source: 'Insee · Eurostat', freq: 'Trimestrielle', status: 'À brancher' },
+        { name: 'Part des immigrés et des étrangers', source: 'Insee', freq: 'Annuelle', status: 'À brancher · rupture 2024' },
+        { name: 'Personnes mises en cause, par nationalité', source: 'SSMSI', freq: 'Annuelle', status: 'À brancher' },
+        { name: 'Lois et ordonnances', source: 'Légifrance, API PISTE', freq: 'Continue', status: 'À brancher' },
+        { name: 'Textes et votes', source: 'data.assemblee-nationale.fr', freq: 'Continue', status: 'À brancher' }
+      ],
+      glossary: [
+        { term: 'Chômage au sens du BIT', def: 'Mesure harmonisée au niveau international. Elle diffère du nombre d’inscrits à France Travail.' },
+        { term: 'Cohabitation', def: 'Période où le président et le Premier ministre ne sont pas du même bord politique.' },
+        { term: 'Rupture de série', def: 'Changement de méthode de mesure qui rend deux périodes non directement comparables.' },
+        { term: 'Décalage des effets', def: 'Nombre d’années entre une décision et le moment où l’on en mesure l’effet.' }
+      ]
+    };
+  }
+}
+</script>
+</body>
+</html>

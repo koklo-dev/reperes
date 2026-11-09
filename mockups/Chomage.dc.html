@@ -1,0 +1,308 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<title>Chômage – Repères</title>
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;700&family=Space+Grotesk:wght@500;700&display=swap" rel="stylesheet">
+<style>
+body{margin:0;background:#0B1530}
+a{color:#A9B4D6;text-decoration:none}a:hover{color:#F4F1EA}
+button{font-family:'JetBrains Mono',monospace}
+</style>
+</helmet>
+<div style="min-height: 2300px; box-sizing: border-box; background-color: #0B1530; background-image: radial-gradient(#1E2F5C 1px, transparent 1px); background-size: 24px 24px; color: #F4F1EA; font-family: 'JetBrains Mono', monospace; font-size: 14px; line-height: 1.6">
+
+<div style="background: #060D22; border-bottom: 1px solid #1E2F5C">
+<div style="max-width: 1280px; margin: 0 auto; padding: 8px 32px; display: flex; flex-wrap: wrap; gap: 8px 24px; justify-content: space-between; font-size: 11px; letter-spacing: 0.08em; text-transform: uppercase; color: #A9B4D6">
+<span>// MAQUETTE v0 · tous les chiffres sont des espaces réservés</span>
+<span>REV 0.1 · FR · 1974—2026</span>
+</div>
+</div>
+
+<header style="border-bottom: 1px solid #1E2F5C; background: #0B1530">
+<div style="max-width: 1280px; margin: 0 auto; padding: 12px 32px; display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 8px 24px">
+<a href="Main.dc.html" style="display: inline-flex; align-items: center; gap: 12px; min-height: 44px; color: #F4F1EA">
+<svg width="28" height="28" viewBox="0 0 28 28" aria-hidden="true"><rect x="3.5" y="3.5" width="21" height="21" fill="none" stroke="#F4F1EA" stroke-width="1.5"/><path d="M14 0V8M14 20V28M0 14H8M20 14H28" stroke="#E8493F" stroke-width="1.5"/></svg>
+<span style="font-family: 'Space Grotesk', sans-serif; font-weight: 700; font-size: 20px; letter-spacing: 0.14em">REPÈRES</span>
+</a>
+<nav aria-label="Navigation principale" style="display: flex; flex-wrap: wrap; gap: 0 8px; font-size: 12px; letter-spacing: 0.08em; text-transform: uppercase">
+<a href="Main.dc.html" style="display: inline-flex; align-items: center; min-height: 44px; padding: 0 10px">Synthèse</a>
+<a href="Chomage.dc.html" aria-current="page" style="display: inline-flex; align-items: center; min-height: 44px; padding: 0 10px; color: #F4F1EA; box-shadow: inset 0 -2px 0 {{accent}}">Chômage</a>
+<a href="Main.dc.html" style="display: inline-flex; align-items: center; min-height: 44px; padding: 0 10px">Secteurs</a>
+<a href="Immigration.dc.html" style="display: inline-flex; align-items: center; min-height: 44px; padding: 0 10px">Immigration</a>
+<a href="Methode.dc.html" style="display: inline-flex; align-items: center; min-height: 44px; padding: 0 10px">Méthode</a>
+</nav>
+</div>
+</header>
+
+<!-- Titre de page -->
+<section style="max-width: 1280px; margin: 0 auto; padding: 48px 32px 32px; display: flex; flex-wrap: wrap; gap: 32px; align-items: flex-end; justify-content: space-between">
+<div style="flex: 1 1 520px; min-width: 0">
+<div style="font-size: 12px; letter-spacing: 0.08em; text-transform: uppercase; color: #A9B4D6"><a href="Main.dc.html">Accueil</a> / <span style="color: #F4F1EA">Chômage</span></div>
+<div style="margin-top: 20px; font-size: 12px; letter-spacing: 0.12em; text-transform: uppercase; color: {{accent}}">// Secteur 01</div>
+<h1 style="margin: 8px 0 0; font-family: 'Space Grotesk', sans-serif; font-weight: 700; font-size: clamp(36px, 5vw, 60px); line-height: 1.04; letter-spacing: -0.02em">Chômage</h1>
+<p style="margin: 16px 0 0; max-width: 640px; color: #A9B4D6; font-size: 15px">Que montrent les séries officielles du chômage, période de pouvoir après période de pouvoir, une fois le contexte européen et le délai des effets pris en compte ?</p>
+</div>
+<div style="flex: 0 1 300px; min-width: 240px; position: relative; border-top: 1px solid #3A4F8A; border-bottom: 1px solid #3A4F8A; padding: 20px 24px; background: rgba(11, 21, 48, 0.85)">
+<div style="position: absolute; top: -1px; left: -1px; width: 12px; height: 12px; border-top: 2px solid #F4F1EA; border-left: 2px solid #F4F1EA"></div>
+<div style="position: absolute; top: -1px; right: -1px; width: 12px; height: 12px; border-top: 2px solid #F4F1EA; border-right: 2px solid #F4F1EA"></div>
+<div style="position: absolute; bottom: -1px; left: -1px; width: 12px; height: 12px; border-bottom: 2px solid #F4F1EA; border-left: 2px solid #F4F1EA"></div>
+<div style="position: absolute; bottom: -1px; right: -1px; width: 12px; height: 12px; border-bottom: 2px solid #F4F1EA; border-right: 2px solid #F4F1EA"></div>
+<div style="font-size: 11px; letter-spacing: 0.1em; text-transform: uppercase; color: #A9B4D6">Dernière valeur · [T/AAAA]</div>
+<div style="margin-top: 8px; font-family: 'Space Grotesk', sans-serif; font-weight: 700; font-size: 44px; line-height: 1; color: {{accent}}">X,X %</div>
+<div style="margin-top: 8px; font-size: 12px; color: #A9B4D6">Source : Insee · BDM [série]</div>
+</div>
+</section>
+
+<nav aria-label="Autres secteurs" style="max-width: 1280px; margin: 0 auto; padding: 0 32px 24px; display: flex; flex-wrap: wrap; gap: 8px">
+<sc-for list="{{sectors}}" as="s" hint-placeholder-count="6">
+<a href="{{s.href}}" aria-current="{{s.cur}}" style="display: inline-flex; align-items: center; gap: 8px; min-height: 44px; padding: 0 14px; background: {{s.bg}}; color: {{s.fg}}; border: 1px solid {{s.bd}}; font-size: 12px; letter-spacing: 0.06em; text-transform: uppercase"><span style="opacity: 0.7">{{s.n}}</span>{{s.label}}</a>
+</sc-for>
+</nav>
+
+<!-- Contrôles -->
+<section style="max-width: 1280px; margin: 0 auto; padding: 0 32px 24px">
+<div style="border-top: 1px solid #3A4F8A; border-bottom: 1px solid #3A4F8A; padding: 20px 0; display: flex; flex-wrap: wrap; gap: 20px 40px">
+<div>
+<div style="font-size: 11px; letter-spacing: 0.1em; text-transform: uppercase; color: #A9B4D6; margin-bottom: 8px">Série</div>
+<div style="display: flex; flex-wrap: wrap; gap: 8px">
+<button type="button" style="min-height: 44px; padding: 0 16px; background: #F4F1EA; color: #0B1530; border: 1px solid #F4F1EA; border-radius: 0; font-size: 12px; letter-spacing: 0.06em; text-transform: uppercase; cursor: pointer">Taux BIT</button>
+<button type="button" style="min-height: 44px; padding: 0 16px; background: transparent; color: #F4F1EA; border: 1px solid #3A4F8A; border-radius: 0; font-size: 12px; letter-spacing: 0.06em; text-transform: uppercase; cursor: pointer">Longue durée</button>
+<button type="button" style="min-height: 44px; padding: 0 16px; background: transparent; color: #F4F1EA; border: 1px solid #3A4F8A; border-radius: 0; font-size: 12px; letter-spacing: 0.06em; text-transform: uppercase; cursor: pointer">15—24 ans</button>
+</div>
+</div>
+<div>
+<div style="font-size: 11px; letter-spacing: 0.1em; text-transform: uppercase; color: #A9B4D6; margin-bottom: 8px">Lecture par</div>
+<div style="display: flex; flex-wrap: wrap; gap: 8px">
+<button type="button" style="min-height: 44px; padding: 0 16px; background: #F4F1EA; color: #0B1530; border: 1px solid #F4F1EA; border-radius: 0; font-size: 12px; letter-spacing: 0.06em; text-transform: uppercase; cursor: pointer">Président</button>
+<button type="button" style="min-height: 44px; padding: 0 16px; background: transparent; color: #F4F1EA; border: 1px solid #3A4F8A; border-radius: 0; font-size: 12px; letter-spacing: 0.06em; text-transform: uppercase; cursor: pointer">Gouvernement</button>
+<button type="button" style="min-height: 44px; padding: 0 16px; background: transparent; color: #F4F1EA; border: 1px solid #3A4F8A; border-radius: 0; font-size: 12px; letter-spacing: 0.06em; text-transform: uppercase; cursor: pointer">Majorité</button>
+</div>
+</div>
+<div>
+<div style="font-size: 11px; letter-spacing: 0.1em; text-transform: uppercase; color: #A9B4D6; margin-bottom: 8px">Comparer à</div>
+<div style="display: flex; flex-wrap: wrap; gap: 8px">
+<button type="button" style="min-height: 44px; padding: 0 16px; background: #F4F1EA; color: #0B1530; border: 1px solid #F4F1EA; border-radius: 0; font-size: 12px; letter-spacing: 0.06em; text-transform: uppercase; cursor: pointer">Zone euro</button>
+<button type="button" style="min-height: 44px; padding: 0 16px; background: transparent; color: #F4F1EA; border: 1px solid #3A4F8A; border-radius: 0; font-size: 12px; letter-spacing: 0.06em; text-transform: uppercase; cursor: pointer">Allemagne</button>
+<button type="button" style="min-height: 44px; padding: 0 16px; background: transparent; color: #F4F1EA; border: 1px solid #3A4F8A; border-radius: 0; font-size: 12px; letter-spacing: 0.06em; text-transform: uppercase; cursor: pointer">Aucun</button>
+</div>
+</div>
+<div>
+<div style="font-size: 11px; letter-spacing: 0.1em; text-transform: uppercase; color: #A9B4D6; margin-bottom: 8px">Décalage des effets</div>
+<div style="display: flex; flex-wrap: wrap; gap: 8px; align-items: center">
+<button type="button" aria-label="Décalage 0 an" style="min-height: 44px; min-width: 44px; background: transparent; color: #F4F1EA; border: 1px solid #3A4F8A; border-radius: 0; font-size: 12px; cursor: pointer">0</button>
+<button type="button" aria-label="Décalage 1 an" style="min-height: 44px; min-width: 44px; background: transparent; color: #F4F1EA; border: 1px solid #3A4F8A; border-radius: 0; font-size: 12px; cursor: pointer">1</button>
+<button type="button" aria-label="Décalage 2 ans" style="min-height: 44px; min-width: 44px; background: #F4F1EA; color: #0B1530; border: 1px solid #F4F1EA; border-radius: 0; font-size: 12px; cursor: pointer">2</button>
+<button type="button" aria-label="Décalage 3 ans" style="min-height: 44px; min-width: 44px; background: transparent; color: #F4F1EA; border: 1px solid #3A4F8A; border-radius: 0; font-size: 12px; cursor: pointer">3</button>
+<button type="button" aria-label="Décalage 5 ans" style="min-height: 44px; min-width: 44px; background: transparent; color: #F4F1EA; border: 1px solid #3A4F8A; border-radius: 0; font-size: 12px; cursor: pointer">5</button>
+<span style="color: #A9B4D6; font-size: 12px">ans</span>
+</div>
+</div>
+</div>
+</section>
+
+<!-- Graphe principal -->
+<section style="max-width: 1280px; margin: 0 auto; padding: 8px 32px 40px">
+<div style="position: relative; border-top: 1px solid #3A4F8A; border-bottom: 1px solid #3A4F8A; padding: 28px 28px 24px; background: rgba(11, 21, 48, 0.9)">
+<div style="position: absolute; top: -1px; left: -1px; width: 12px; height: 12px; border-top: 2px solid #F4F1EA; border-left: 2px solid #F4F1EA"></div>
+<div style="position: absolute; top: -1px; right: -1px; width: 12px; height: 12px; border-top: 2px solid #F4F1EA; border-right: 2px solid #F4F1EA"></div>
+<div style="position: absolute; bottom: -1px; left: -1px; width: 12px; height: 12px; border-bottom: 2px solid #F4F1EA; border-left: 2px solid #F4F1EA"></div>
+<div style="position: absolute; bottom: -1px; right: -1px; width: 12px; height: 12px; border-bottom: 2px solid #F4F1EA; border-right: 2px solid #F4F1EA"></div>
+<div style="display: flex; flex-wrap: wrap; justify-content: space-between; gap: 12px 24px; margin-bottom: 20px">
+<div>
+<h2 style="margin: 0; font-family: 'Space Grotesk', sans-serif; font-weight: 700; font-size: 26px; letter-spacing: -0.01em">Taux de chômage (BIT), France et zone euro</h2>
+<div style="margin-top: 4px; font-size: 12px; color: #A9B4D6">Trimestriel · bandes = exécutif en place · repères = décisions et contexte</div>
+</div>
+<div style="align-self: flex-start; padding: 4px 10px; border: 1px solid {{accent}}; color: {{accent}}; font-size: 11px; letter-spacing: 0.1em; text-transform: uppercase">Tracé factice</div>
+</div>
+
+<svg viewBox="0 0 1080 400" width="100%" role="img" aria-label="Schéma du graphe de chômage : deux courbes factices superposées à la frise des présidents, avec repères de décisions et de contexte" style="display: block; font-family: 'JetBrains Mono', monospace">
+<defs>
+<pattern id="hatch2" width="6" height="6" patternUnits="userSpaceOnUse" patternTransform="rotate(45)"><line x1="0" y1="0" x2="0" y2="6" stroke="#7F8FBF" stroke-width="1.5"/></pattern>
+</defs>
+<g stroke="#1E2F5C" stroke-width="1">
+<line x1="60" y1="290" x2="1060" y2="290"/><line x1="60" y1="228" x2="1060" y2="228"/><line x1="60" y1="165" x2="1060" y2="165"/><line x1="60" y1="103" x2="1060" y2="103"/><line x1="60" y1="40" x2="1060" y2="40"/>
+</g>
+<g fill="#A9B4D6" font-size="10" text-anchor="end">
+<text x="50" y="294">0</text><text x="50" y="232">3</text><text x="50" y="169">6</text><text x="50" y="107">9</text><text x="50" y="44">12</text>
+</g>
+<g stroke="#3A4F8A" stroke-width="1" stroke-dasharray="2 4">
+<line x1="192" y1="40" x2="192" y2="300"/><line x1="456" y1="40" x2="456" y2="300"/><line x1="682.5" y1="40" x2="682.5" y2="300"/><line x1="777" y1="40" x2="777" y2="300"/><line x1="871" y1="40" x2="871" y2="300"/>
+</g>
+<g stroke="#F4F1EA" stroke-width="1.5" fill="none">
+<path d="M54,40H66M60,34V46"/><path d="M1054,40H1066M1060,34V46"/><path d="M54,290H66M60,284V296"/><path d="M1054,290H1066M1060,284V296"/>
+</g>
+<!-- repères décisions / contexte -->
+<g stroke="#7F8FBF" stroke-width="1" stroke-dasharray="1 3">
+<line x1="512.8" y1="30" x2="512.8" y2="290"/><line x1="550.5" y1="30" x2="550.5" y2="290"/><line x1="701.5" y1="30" x2="701.5" y2="290"/><line x1="852.5" y1="30" x2="852.5" y2="290"/><line x1="927.7" y1="30" x2="927.7" y2="290"/>
+</g>
+<g fill="#F4F1EA" stroke="#F4F1EA">
+<path d="M512.8,14L520.8,22L512.8,30L504.8,22Z"/><path d="M550.5,14L558.5,22L550.5,30L542.5,22Z"/><path d="M852.5,14L860.5,22L852.5,30L844.5,22Z"/><path d="M871,14L879,22L871,30L863,22Z"/>
+</g>
+<g fill="#0B1530" font-size="9" text-anchor="middle" font-weight="700">
+<text x="512.8" y="25">1</text><text x="550.5" y="25">2</text><text x="852.5" y="25">3</text><text x="871" y="25">4</text>
+</g>
+<g fill="#0B1530" stroke="#F4F1EA" stroke-width="1.5">
+<circle cx="701.5" cy="22" r="8"/><circle cx="927.7" cy="22" r="8"/>
+</g>
+<g fill="#F4F1EA" font-size="9" text-anchor="middle" font-weight="700">
+<text x="701.5" y="25">A</text><text x="927.7" y="25">B</text>
+</g>
+<!-- courbes factices -->
+<path d="M60,220 L173,184 L286,140 L400,158 L513,118 L626,152 L739,130 L852,160 L966,140 L1041,144" fill="none" stroke="#F4F1EA" stroke-width="1.5" stroke-dasharray="6 4"/>
+<path d="M60,232 L173,176 L286,128 L400,172 L513,100 L626,156 L739,112 L852,172 L966,134 L1041,146" fill="none" stroke="{{accent}}" stroke-width="2.5"/>
+<circle cx="1041" cy="146" r="4" fill="{{accent}}"/>
+<path d="M1041,134V158M1029,146H1053" stroke="{{accent}}" stroke-width="1"/>
+<text x="1034" y="128" fill="#F4F1EA" font-size="11" text-anchor="end">[T/2026] · X,X %</text>
+<!-- frise président -->
+<g font-size="10" text-anchor="middle" fill="#F4F1EA">
+<rect x="60" y="302" width="132" height="26" fill="#14234A" stroke="#3A4F8A"/><text x="126" y="319">GISCARD</text>
+<rect x="192" y="302" width="264" height="26" fill="#1B2D5E" stroke="#3A4F8A"/><text x="324" y="319">MITTERRAND</text>
+<rect x="456" y="302" width="226.5" height="26" fill="#14234A" stroke="#3A4F8A"/><text x="569" y="319">CHIRAC</text>
+<rect x="682.5" y="302" width="94.5" height="26" fill="#1B2D5E" stroke="#3A4F8A"/><text x="730" y="319">SARKOZY</text>
+<rect x="777" y="302" width="94" height="26" fill="#14234A" stroke="#3A4F8A"/><text x="824" y="319">HOLLANDE</text>
+<rect x="871" y="302" width="189" height="26" fill="#1B2D5E" stroke="#3A4F8A"/><text x="965" y="319">MACRON ›</text>
+</g>
+<rect x="871" y="300" width="189" height="30" fill="none" stroke="{{accent}}" stroke-width="1.5"/>
+<rect x="286.4" y="332" width="37.8" height="22" fill="url(#hatch2)" stroke="#3A4F8A"/>
+<rect x="418.5" y="332" width="37.7" height="22" fill="url(#hatch2)" stroke="#3A4F8A"/>
+<rect x="494" y="332" width="94.3" height="22" fill="url(#hatch2)" stroke="#3A4F8A"/>
+<rect x="499" y="336" width="84" height="14" fill="#0B1530"/>
+<text x="541" y="347" fill="#F4F1EA" font-size="9" text-anchor="middle">COHABITATION</text>
+<g fill="#A9B4D6" font-size="10" text-anchor="middle">
+<text x="60" y="376">1974</text><text x="192" y="376">1981</text><text x="456" y="376">1995</text><text x="682.5" y="376">2007</text><text x="777" y="376">2012</text><text x="871" y="376">2017</text><text x="1041" y="376">2026</text>
+</g>
+</svg>
+
+<div style="margin-top: 20px; padding-top: 16px; border-top: 1px dashed #3A4F8A; display: flex; flex-wrap: wrap; gap: 12px 32px; font-size: 12px; color: #A9B4D6">
+<span style="display: inline-flex; align-items: center; gap: 8px"><span style="width: 24px; height: 0; border-top: 3px solid {{accent}}"></span>France</span>
+<span style="display: inline-flex; align-items: center; gap: 8px"><span style="width: 24px; height: 0; border-top: 2px dashed #F4F1EA"></span>Zone euro</span>
+<span style="display: inline-flex; align-items: center; gap: 8px"><span style="width: 10px; height: 10px; background: #F4F1EA; transform: rotate(45deg)"></span>Décision (loi, ordonnance)</span>
+<span style="display: inline-flex; align-items: center; gap: 8px"><span style="width: 12px; height: 12px; border: 1.5px solid #F4F1EA; border-radius: 50%"></span>Contexte extérieur</span>
+</div>
+<div style="margin-top: 12px; font-size: 11px; color: #A9B4D6">Source : Insee, BDM, série [idbank à renseigner] · Eurostat [code à renseigner]</div>
+</div>
+</section>
+
+<!-- Tableau par exécutif + notes -->
+<section style="max-width: 1280px; margin: 0 auto; padding: 0 32px 40px; display: flex; flex-wrap: wrap; gap: 32px; align-items: flex-start">
+<div style="flex: 999 1 640px; min-width: 0">
+<div style="display: flex; align-items: center; gap: 16px; margin-bottom: 16px; font-size: 12px; letter-spacing: 0.12em; text-transform: uppercase; color: #A9B4D6">
+<span>// Lecture par exécutif</span>
+<span style="flex: 1; height: 1px; background: #1E2F5C"></span>
+</div>
+<div style="overflow-x: auto; border: 1px solid #3A4F8A; background: #0B1530">
+<div style="min-width: 760px; display: grid; grid-template-columns: 1.3fr 0.9fr 0.8fr 0.8fr 0.9fr 2fr; gap: 1px; background: #3A4F8A; font-size: 12px">
+<div style="background: #060D22; padding: 10px 12px; font-size: 11px; letter-spacing: 0.08em; text-transform: uppercase; color: #A9B4D6">Exécutif</div>
+<div style="background: #060D22; padding: 10px 12px; font-size: 11px; letter-spacing: 0.08em; text-transform: uppercase; color: #A9B4D6">Période</div>
+<div style="background: #060D22; padding: 10px 12px; font-size: 11px; letter-spacing: 0.08em; text-transform: uppercase; color: #A9B4D6">Début</div>
+<div style="background: #060D22; padding: 10px 12px; font-size: 11px; letter-spacing: 0.08em; text-transform: uppercase; color: #A9B4D6">Fin</div>
+<div style="background: #060D22; padding: 10px 12px; font-size: 11px; letter-spacing: 0.08em; text-transform: uppercase; color: #A9B4D6">Variation</div>
+<div style="background: #060D22; padding: 10px 12px; font-size: 11px; letter-spacing: 0.08em; text-transform: uppercase; color: #A9B4D6">Contexte extérieur</div>
+<sc-for list="{{rows}}" as="row" hint-placeholder-count="6">
+<div style="background: #0B1530; padding: 12px; color: #F4F1EA; font-weight: 500">{{row.name}}</div>
+<div style="background: #0B1530; padding: 12px; color: #A9B4D6">{{row.period}}</div>
+<div style="background: #0B1530; padding: 12px; color: #F4F1EA">{{row.start}}</div>
+<div style="background: #0B1530; padding: 12px; color: #F4F1EA">{{row.end}}</div>
+<div style="background: #0B1530; padding: 12px; color: #F4F1EA">{{row.delta}}</div>
+<div style="background: #0B1530; padding: 12px; color: #A9B4D6">{{row.ctx}}</div>
+</sc-for>
+</div>
+</div>
+<div style="margin-top: 8px; font-size: 11px; color: #A9B4D6">Début et fin = valeurs aux bornes du mandat, décalées du nombre d'années choisi.</div>
+</div>
+
+<div style="flex: 1 1 320px; min-width: 0; position: relative; border-top: 1px solid #3A4F8A; border-bottom: 1px solid #3A4F8A; padding: 24px; background: rgba(11, 21, 48, 0.85)">
+<div style="position: absolute; top: -1px; left: -1px; width: 12px; height: 12px; border-top: 2px solid #F4F1EA; border-left: 2px solid #F4F1EA"></div>
+<div style="position: absolute; top: -1px; right: -1px; width: 12px; height: 12px; border-top: 2px solid #F4F1EA; border-right: 2px solid #F4F1EA"></div>
+<div style="position: absolute; bottom: -1px; left: -1px; width: 12px; height: 12px; border-bottom: 2px solid #F4F1EA; border-left: 2px solid #F4F1EA"></div>
+<div style="position: absolute; bottom: -1px; right: -1px; width: 12px; height: 12px; border-bottom: 2px solid #F4F1EA; border-right: 2px solid #F4F1EA"></div>
+<div style="font-size: 11px; letter-spacing: 0.1em; text-transform: uppercase; color: {{accent}}">Ce que ce graphique ne dit pas</div>
+<sc-for list="{{caveats}}" as="c" hint-placeholder-count="4">
+<div style="margin-top: 16px">
+<div style="font-family: 'Space Grotesk', sans-serif; font-weight: 700; font-size: 17px">{{c.title}}</div>
+<div style="margin-top: 2px; font-size: 12px; color: #A9B4D6">{{c.desc}}</div>
+</div>
+</sc-for>
+</div>
+</section>
+
+<!-- Repères -->
+<section style="max-width: 1280px; margin: 0 auto; padding: 0 32px 56px">
+<div style="display: flex; align-items: center; gap: 16px; margin-bottom: 16px; font-size: 12px; letter-spacing: 0.12em; text-transform: uppercase; color: #A9B4D6">
+<span>// Repères du graphique</span>
+<span style="flex: 1; height: 1px; background: #1E2F5C"></span>
+<span>décisions : Légifrance · contexte : sources à renseigner</span>
+</div>
+<div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 1px; background: #3A4F8A; border: 1px solid #3A4F8A">
+<sc-for list="{{events}}" as="ev" hint-placeholder-count="6">
+<div style="background: #0B1530; padding: 20px 24px; display: flex; gap: 16px">
+<div style="flex: 0 0 32px; height: 32px; display: flex; align-items: center; justify-content: center; border: 1.5px solid #F4F1EA; font-weight: 700; font-size: 13px">{{ev.key}}</div>
+<div style="min-width: 0">
+<div style="font-size: 11px; letter-spacing: 0.08em; text-transform: uppercase; color: #A9B4D6">{{ev.kind}} · {{ev.year}}</div>
+<div style="margin-top: 4px; font-size: 13px; color: #F4F1EA">{{ev.title}}</div>
+<div style="margin-top: 4px; font-size: 11px; color: #A9B4D6">{{ev.src}}</div>
+</div>
+</div>
+</sc-for>
+</div>
+</section>
+
+<footer style="border-top: 1px solid #1E2F5C; background: #060D22">
+<div style="max-width: 1280px; margin: 0 auto; padding: 32px; display: flex; flex-wrap: wrap; justify-content: space-between; gap: 16px 32px; font-size: 11px; letter-spacing: 0.06em; text-transform: uppercase; color: #A9B4D6">
+<span>Sources prévues : Insee (BDM) · Eurostat · OCDE · Dares · Légifrance</span>
+<span>Maquette v0 · aucune donnée réelle</span>
+</div>
+</footer>
+
+</div>
+</x-dc>
+<script type="text/x-dc" data-dc-script data-props='{"accent":{"editor":"color","default":"#E8493F","options":["#E8493F","#FF6A5C","#D93A31"]},"$preview":{"width":1360,"height":2300}}'>
+class Component extends DCLogic {
+  renderVals() {
+    const accent = this.props.accent ?? '#E8493F';
+    const sec = (n, label, href, on) => ({ n, label, href, cur: on ? 'page' : 'false', bg: on ? '#F4F1EA' : 'transparent', fg: on ? '#0B1530' : '#F4F1EA', bd: on ? '#F4F1EA' : '#3A4F8A' });
+    return {
+      sectors: [
+        sec('01', 'Chômage', 'Chomage.dc.html', true),
+        sec('02', 'Logement', 'Logement.dc.html', false),
+        sec('03', 'Pouvoir d\u2019achat', 'PouvoirAchat.dc.html', false),
+        sec('04', 'Dette et déficit', 'Dette.dc.html', false),
+        sec('05', 'Sécurité', 'Securite.dc.html', false),
+        sec('06', 'Immigration', 'Immigration.dc.html', false)
+      ],
+      accent,
+      rows: [
+        { name: 'Giscard d’Estaing', period: '1974—1981', start: 'X,X %', end: 'X,X %', delta: '± X,X pt', ctx: '[à documenter]' },
+        { name: 'Mitterrand', period: '1981—1995', start: 'X,X %', end: 'X,X %', delta: '± X,X pt', ctx: '[à documenter]' },
+        { name: 'Chirac', period: '1995—2007', start: 'X,X %', end: 'X,X %', delta: '± X,X pt', ctx: 'Éclatement de la bulle internet (2001)' },
+        { name: 'Sarkozy', period: '2007—2012', start: 'X,X %', end: 'X,X %', delta: '± X,X pt', ctx: 'Crise financière mondiale (2008)' },
+        { name: 'Hollande', period: '2012—2017', start: 'X,X %', end: 'X,X %', delta: '± X,X pt', ctx: 'Crise des dettes souveraines en zone euro (2011—2013)' },
+        { name: 'Macron', period: '2017—2026', start: 'X,X %', end: 'X,X %', delta: '± X,X pt', ctx: 'Covid-19 (2020) · guerre en Ukraine (2022)' }
+      ],
+      caveats: [
+        { title: 'Un délai', desc: 'Une mesure peut mettre 2 à 5 ans à produire ses effets : le décalage est réglable.' },
+        { title: 'Le contexte', desc: 'Les crises mondiales touchent aussi les voisins : comparer à la zone euro.' },
+        { title: 'La définition', desc: 'Le chômage au sens du BIT n’est pas le nombre d’inscrits à France Travail.' },
+        { title: 'Le sens', desc: 'Une période et un chiffre qui coïncident ne prouvent pas une causalité.' }
+      ],
+      events: [
+        { key: '1', kind: 'Décision', year: '1998', title: 'Première loi sur la réduction du temps de travail (loi Aubry)', src: 'Légifrance · [référence à renseigner]' },
+        { key: '2', kind: 'Décision', year: '2000', title: 'Seconde loi Aubry, dite « des 35 heures »', src: 'Légifrance · [référence à renseigner]' },
+        { key: '3', kind: 'Décision', year: '2016', title: 'Loi Travail', src: 'Légifrance · [référence à renseigner]' },
+        { key: '4', kind: 'Décision', year: '2017', title: 'Ordonnances réformant le Code du travail', src: 'Légifrance · [référence à renseigner]' },
+        { key: 'A', kind: 'Contexte', year: '2008', title: 'Crise financière mondiale', src: 'Source à renseigner' },
+        { key: 'B', kind: 'Contexte', year: '2020', title: 'Pandémie de Covid-19', src: 'Source à renseigner' }
+      ]
+    };
+  }
+}
+</script>
+</body>
+</html>
