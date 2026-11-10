@@ -8,7 +8,7 @@ server: vps20
 
 apps:
   web:
-    image: ghcr.io/josias-koffi/reperes-web
+    image: ghcr.io/koklo-dev/reperes-web
     port: 3000
     domain: web
     healthcheck: /api/health
